@@ -18,9 +18,23 @@ function Contact() {
     }));
   };
 
-  const hanldeSubmission = (e) => {
+  const hanldeSubmission = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    try {
+      const res = await fetch("http://localhost:8080/sendMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) {
+        throw new Error("Failed to send Message!");
+      }
+      alert("Message sent!");
+    } catch (error) {
+      console.error("Error sending message: ", error);
+    }
   };
 
   return (

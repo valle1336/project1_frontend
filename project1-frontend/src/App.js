@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 import {
   createBrowserRouter,
   Route,
@@ -8,11 +7,10 @@ import {
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import HomePage from "./views/HomePage";
-import About from './views/About';
-import Services from './views/Services';
-import Contact from './views/Contact';
-import Partners from './views/Partners';
-
+import About from "./views/About";
+import Services from "./views/Services";
+import Contact from "./views/Contact";
+import Partners from "./views/Partners";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,9 +24,7 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-  return (
-    <RouterProvider router={router}/>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
