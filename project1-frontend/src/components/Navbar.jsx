@@ -6,6 +6,9 @@ function Navbar() {
       <nav>
         <ul>
             <li>
+                <h1>TMC</h1>
+            </li>
+            <li>
                 <Link to="/">Hem</Link>
             </li>
             <li>
