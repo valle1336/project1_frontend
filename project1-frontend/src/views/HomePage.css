@@ -1,0 +1,25 @@
+.main-div {
+  position: relative; /* Gör att absolut positionerade element är relativa till detta element */
+  width: 100%; /* Sätter bredden till 100% av förälderelementet */
+  text-align: center; /* Centrerar texten horisontellt */
+}
+
+.homepage-image {
+  width: 100%; /* Gör bilden 100% av förälderdivens bredd */
+  height: auto; /* Behåller bildens ursprungliga proportioner */
+  max-width: 1920px; /* Begränsar bildens maxbredd */
+  height: 90vh; /* Ställer in en specifik höjd */
+  object-fit: cover; /* Klipper bilden för att fylla utrymmet */
+}
+
+.overlay-text {
+  position: absolute; /* Tillåter fri positionering inom .main-div */
+  top: 50%; /* Flyttar texten till mitten av elementets höjd */
+  left: 50%; /* Flyttar texten till mitten av elementets bredd */
+  transform: translate(-50%, -50%); /* Justerar för att exakt centrera texten */
+  color: white; /* Vit text för kontrast */
+  font-size: 2em; /* Justera storleken på texten efter behov */
+  background: rgba(0, 0, 0, 0.8); /* Halvtransparent bakgrund för läsbarhet */
+  padding: 10px; /* Lägger till padding runt texten */
+  border-radius: 10px; /* Rundar hörnen på bakgrunden */
+}

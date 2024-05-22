@@ -1,0 +1,32 @@
+nav {
+  background-color: #333; /* Bakgrundsfärg */
+  padding: 10px 0; /* Fyllning (topp och botten) */
+}
+
+ul {
+  list-style-type: none; /* Ta bort punktlistan */
+  margin: 0; /* Ta bort marginalen */
+  padding: 0; /* Ta bort fyllning */
+  text-align: center; /* Centrera texten */
+}
+
+li {
+  display: inline; /* Visa listelementet som inline-block */
+  margin-right: 20px; /* Högermarginal mellan listelement */
+}
+
+.logo {
+  color: #fff; /* Textfärg */
+  margin: 0; /* Ta bort marginal */
+  font-size: 34px; /* Textstorlek */
+}
+
+a {
+  color: #fff; /* Länkfärg */
+  text-decoration: none; /* Ta bort understrykning */
+  font-size: 18px; /* Textstorlek */
+}
+
+a:hover {
+  text-decoration: underline; /* Understryk länken vid hovring */
+}
