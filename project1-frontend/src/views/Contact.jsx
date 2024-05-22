@@ -8,6 +8,7 @@ function Contact() {
     phoneNumber: "",
     mail: "",
     message: "",
+    subject: "",
   });
 
   const handleChange = (e) => {
@@ -22,7 +23,7 @@ function Contact() {
     e.preventDefault();
     console.log(formData);
     try {
-      const res = await fetch("http://localhost:8080/sendMessage", {
+      const res = await fetch("http://localhost:8080/mail/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +58,7 @@ function Contact() {
         </div>
 
         <div>
-          <label htmlFor="">Telefon</label>
+          <label htmlFor="">Telefon *</label>
           <br />
           <input
             type="tel"
@@ -71,7 +72,7 @@ function Contact() {
         </div>
 
         <div>
-          <label htmlFor="">E-Post</label>
+          <label htmlFor="">E-Post *</label>
           <br />
           <input
             type="email"
@@ -85,7 +86,20 @@ function Contact() {
         </div>
 
         <div>
-          <label htmlFor="">Meddelande</label>
+          <label htmlFor="">Ämne</label>
+          <br />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+          <br />
+        </div>
+
+        <div>
+          <label htmlFor="">Meddelande *</label>
           <br />
           <textarea
             type="message"
