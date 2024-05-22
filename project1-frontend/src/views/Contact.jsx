@@ -5,8 +5,8 @@ import "./Contact.css";
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
-    email: "",
+    phoneNumber: "",
+    mail: "",
     message: "",
   });
 
@@ -20,6 +20,7 @@ function Contact() {
 
   const hanldeSubmission = async (e) => {
     e.preventDefault();
+    console.log(formData);
     try {
       const res = await fetch("http://localhost:8080/sendMessage", {
         method: "POST",
@@ -60,9 +61,9 @@ function Contact() {
           <br />
           <input
             type="tel"
-            name="phone"
+            name="phoneNumber"
             id="phone"
-            value={formData.phone}
+            value={formData.phoneNumber}
             onChange={handleChange}
             required
           />
@@ -74,9 +75,9 @@ function Contact() {
           <br />
           <input
             type="email"
-            name="email"
+            name="mail"
             id="email"
-            value={formData.email}
+            value={formData.mail}
             onChange={handleChange}
             required
           />
