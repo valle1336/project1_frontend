@@ -1,0 +1,52 @@
+footer {
+  background-color: #333; /* Matchar navbarens bakgrundsfärg */
+  color: #fff; /* Textfärg */
+  text-align: center; /* Centrera text */
+  padding: 20px 0; /* Fyllning (topp och botten) */
+  position: fixed; /* Gör footern fast */
+  bottom: 0; /* Positionerar footern längst ned */
+  width: 100%; /* Gör footern lika bred som fönstret */
+}
+
+.footer-content {
+  margin-bottom: 20px; /* Marginal under footerinnehåll */
+}
+
+.footer-content h3 {
+  margin: 0;
+  padding-bottom: 10px; /* Fyllning under rubriken */
+  font-size: 24px;
+}
+
+.footer-content p {
+  margin: 0;
+  padding-bottom: 10px; /* Fyllning under texten */
+  font-size: 16px;
+}
+
+.socials {
+  list-style-type: none; /* Ta bort punktlistan */
+  margin: 0; /* Ta bort marginal */
+  padding: 0; /* Ta bort fyllning */
+}
+
+.socials li {
+  display: inline; /* Visa listelementet som inline-block */
+  margin: 0 10px; /* Marginal mellan ikoner */
+}
+
+.socials li a {
+  color: #fff; /* Länkfärg */
+  text-decoration: none; /* Ta bort understrykning */
+  font-size: 20px; /* Ikonstorlek */
+}
+
+.footer-bottom {
+  border-top: 1px solid #555; /* Toppenlinje */
+  padding-top: 10px; /* Fyllning ovanför text */
+}
+
+.footer-bottom p {
+  margin: 0; /* Ta bort marginal */
+  font-size: 14px; /* Textstorlek */
+}
