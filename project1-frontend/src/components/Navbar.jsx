@@ -7,7 +7,7 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <h1>TMC</h1>
+          <h1 className="logo">TMC</h1>
         </li>
         <li>
           <Link to="/">Hem</Link>

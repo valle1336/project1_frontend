@@ -41,7 +41,7 @@ function Contact() {
 
   return (
     <>
-      <div>Contact page</div>
+      <div></div>
       <form onSubmit={hanldeSubmission}>
         <div>
           <label htmlFor="">Namn</label>
