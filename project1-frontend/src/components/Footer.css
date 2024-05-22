@@ -3,7 +3,6 @@ footer {
   color: #fff; /* Textfärg */
   text-align: center; /* Centrera text */
   padding: 20px 0; /* Fyllning (topp och botten) */
-  position: fixed; /* Gör footern fast */
   bottom: 0; /* Positionerar footern längst ned */
   width: 100%; /* Gör footern lika bred som fönstret */
 }
