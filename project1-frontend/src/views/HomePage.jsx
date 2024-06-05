@@ -7,7 +7,7 @@ function HomePage() {
     <>
       <div className="main-div">
         <img src={TMC} alt="Homepage" className="homepage-image" />
-        <h1 className="overlay-text">Thor Martinus Constructions</h1>
+        <h1 className="overlay-text">Välkommen till TMC Entreprenad</h1>
       </div>
     </>
   );
